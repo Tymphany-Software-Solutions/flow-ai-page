@@ -110,7 +110,7 @@ export default {
 		    var email = that.aesEncrypt(that.email);
 			console.log(email)
 			uni.request({
-				url:"/api/tomcat/flowstudio/public/user/getAddressByEmail",
+				url:"/tomcat/flowstudio/public/user/getAddressByEmail",
 				method:"POST",
 				data:{
 					'email':email
