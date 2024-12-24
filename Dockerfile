@@ -1,5 +1,5 @@
 # 使用nginx镜像
-FROM nginx:latest-arm64
+FROM nginx:latest
 # 作者
 MAINTAINER cmh
 # 删除nginx 默认配置
