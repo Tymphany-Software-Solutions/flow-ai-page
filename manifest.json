@@ -74,6 +74,19 @@
             "mode" : "hash",
             //默认是/，这里设置成./即可
             "base" : "./"
-        }
+        },
+		"devServer": {
+		            "proxy": {
+		                "/api": {
+		                    "target": "https://dev1.tymecho.com",
+		                    "changeOrigin": true,
+		                    "secure": false,
+		                    "pathRewrite": {
+		                        "^/api": ""
+		                    }
+		                }
+		            }
+		        }
+	
     }
 }
