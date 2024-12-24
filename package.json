@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "crypto-js": "^4.2.0"
+  },
+    "scripts": {
+      "build:h5": "cross-env UNI_PLATFORM=h5 vue-cli-service build",
+      "build:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin vue-cli-service build",
+      "build:app-plus": "cross-env UNI_PLATFORM=app-plus vue-cli-service build"
+    }
+}

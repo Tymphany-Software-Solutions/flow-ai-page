@@ -1,0 +1,51 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"app-plus": {  
+				    "titleNView": false
+				}
+		    
+			}
+		},
+		{
+			"path" : "pages/chat/chat",
+			"style" : 
+			{
+				"app-plus": {
+				  "titleNView": {
+				    "type": "transparent"
+				  }
+				}
+			}
+		},
+		{
+			"path" : "pages/chat/right-chat",
+			"style" : 
+			{
+				"app-plus": {
+				  "titleNView": {
+				    "type": "transparent"
+				  }
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	// "rightWindow": {
+	//   "path": "responsive/right-window.vue",
+	//   "style": {
+	//     "width": "calc(100vw - 450px)"
+	//   },
+	//   "matchMedia": {
+	//     "minWidth": 768
+	//   }
+	// },
+	"uniIdRouter": {}
+}
