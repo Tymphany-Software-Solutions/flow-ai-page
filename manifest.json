@@ -70,11 +70,11 @@
     },
     "vueVersion" : "2",
     "h5" : {
-        "router" : {
-            "mode" : "hash",
-            //默认是/，这里设置成./即可
-            "base" : "./"
-        },
+        // "router" : {
+        //     "mode" : "hash",
+        //     //默认是/，这里设置成./即可
+        //     "base" : "./"
+        // },
 		"devServer": {
 		            "proxy": {
 		                "/api": {

@@ -178,7 +178,7 @@
 					var jiamiAddress = that.aesEncrypt(that.address);
 					that.page = that.page + 1
 					uni.request({
-						url: "https://dev1.tymecho.com/tomcat/flowstudio/public/chatHistory/getChatHistoryByAddressAndUserIdAndConversationId",
+						url: "/api/tomcat/flowstudio/public/chatHistory/getChatHistoryByAddressAndUserIdAndConversationId",
 						method: "POST",
 						data: {
 							'address': jiamiAddress,
@@ -245,7 +245,7 @@
 					var jiamiAddress = that.aesEncrypt(address);
 		
 					uni.request({
-						url: "https://dev1.tymecho.com/tomcat/flowstudio/public/chatHistory/getConversationAndUserIdListByAddress",
+						url: "/api/tomcat/flowstudio/public/chatHistory/getConversationAndUserIdListByAddress",
 						method: "POST",
 						data: {
 							'address': jiamiAddress
@@ -413,7 +413,7 @@
 			getGuideText() {
 				var that = this
 				uni.request({
-					url: "https://dev1.tymecho.com/tomcat/flowstudio/public/guideText/getAllGuideText",
+					url: "/api/tomcat/flowstudio/public/guideText/getAllGuideText",
 					method: "POST",
 					data: {
 						'page': 1,
@@ -441,7 +441,7 @@
 				var jiamiUserId = that.aesEncrypt(that.userID);
 				var jiamiAddress = that.aesEncrypt(that.address);
 				uni.request({
-					url: "https://dev1.tymecho.com/tomcat/flowstudio/public/chatHistory/getChatHistoryByAddressAndUserIdAndConversationId",
+					url: "/api/tomcat/flowstudio/public/chatHistory/getChatHistoryByAddressAndUserIdAndConversationId",
 					method: "POST",
 					sslVerify:true,
 					data: {
